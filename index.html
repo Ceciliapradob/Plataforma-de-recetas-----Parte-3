@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Recetas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Plataforma de Recetas</h1>
+    </header>
+    <main>
+        <section id="recipe-form">
+            <h2>Añadir Nueva Receta</h2>
+            <form id="add-recipe-form">
+                <label for="recipe-name">Nombre de la Receta:</label>
+                <input type="text" id="recipe-name" required>
+
+                <label for="ingredients">Ingredientes:</label>
+                <textarea id="ingredients" rows="4" required></textarea>
+
+                <label for="instructions">Instrucciones:</label>
+                <textarea id="instructions" rows="4" required></textarea>
+
+                <button type="submit">Agregar Receta</button>
+            </form>
+        </section>
+        <section id="recipe-list">
+            <h2>Recetas Disponibles</h2>
+            <ul id="recipes">
+                <!-- Aquí se mostrarán las recetas -->
+            </ul>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
